@@ -1,4 +1,4 @@
-package com.example.hello.controller;
+package com.example.todoList.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.hello.model.Todo;
-import com.example.hello.model.TodoRequest;
-import com.example.hello.model.TodoResponse;
-import com.example.hello.repository.TodoRepository;
+import com.example.todoList.model.Todo;
+import com.example.todoList.model.TodoRequest;
+import com.example.todoList.model.TodoResponse;
+import com.example.todoList.repository.TodoRepository;
 
 /**
  * Todo API Controller
@@ -135,4 +135,4 @@ public class TodoController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-}
+} 

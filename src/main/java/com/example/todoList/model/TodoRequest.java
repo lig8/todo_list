@@ -1,4 +1,4 @@
-package com.example.hello.model;
+package com.example.todoList.model;
 
 public class TodoRequest {
     private String value;

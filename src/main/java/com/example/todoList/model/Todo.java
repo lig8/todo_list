@@ -1,8 +1,13 @@
-package com.example.hello.model;
+package com.example.todoList.model;
 
-import jakarta.persistence.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "todo_list")
@@ -40,8 +45,6 @@ public class Todo {
     public void setValue(String value) {
         this.value = value;
     }
-
-    
     
     @JsonProperty("isCompleted")
     public boolean getIsCompleted() {
@@ -51,5 +54,4 @@ public class Todo {
     public void setIsCompleted(boolean isCompleted) {
         this.isCompleted = isCompleted;
     }
-
 } 

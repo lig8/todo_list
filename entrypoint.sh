@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar target/hello-0.0.1-SNAPSHOT.jar
+java -jar target/todoList-0.0.1-SNAPSHOT.jar

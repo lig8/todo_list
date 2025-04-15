@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>hello</artifactId>
+    <artifactId>todoList</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hello</name>
-    <description>hello</description>
+    <name>todoList</name>
+    <description>Todo List Application</description>
     <url/>
     <licenses>
         <license/>
@@ -66,6 +66,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.example.todoList.TodoListApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>

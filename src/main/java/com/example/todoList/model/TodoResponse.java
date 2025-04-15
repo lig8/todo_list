@@ -1,6 +1,7 @@
-package com.example.hello.model;
+package com.example.todoList.model;
 
 import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TodoResponse {

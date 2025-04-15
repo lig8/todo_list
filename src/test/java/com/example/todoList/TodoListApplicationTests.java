@@ -1,13 +1,13 @@
-package com.example.hello;
+package com.example.todoList;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HelloApplicationTests {
+class TodoListApplicationTests {
 
     @Test
     void contextLoads() {
     }
 
-}
+} 
