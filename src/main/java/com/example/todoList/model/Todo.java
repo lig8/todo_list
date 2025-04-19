@@ -14,7 +14,7 @@ import jakarta.persistence.Table;
 public class Todo {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "_id")
     @JsonProperty("_id")
     private long id;
