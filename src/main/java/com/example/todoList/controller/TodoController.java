@@ -59,8 +59,13 @@ public class TodoController {
         }
     }
 
-    @GetMapping("/todo/{id}")
-    public ResponseEntity<Todo> getTodoById(@PathVariable("id") long id) {
+    @GetMapping("/todo")
+    public ResponseEntity<Todo> getTodoById(@RequestParam(required = true) Long id) {
+        if (id == null) {
+            logger.warn("Get request missing ID");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        
         Optional<Todo> todoData = todoRepository.findById(id);
 
         if (todoData.isPresent()) {
